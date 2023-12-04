@@ -1,20 +1,27 @@
+#### ---Jerry Tarus--- ####
+
+
 def is_balanced(expression):
-    stack = []
+    exp = []
     brackets = {')': '(', '}': '{', ']': '['}
 
     for char in expression:
         if char in brackets.values():
-            stack.append(char)
+            exp.append(char)
         elif char in brackets.keys():
-            if not stack or stack.pop() != brackets[char]:
+            if not exp or exp.pop() != brackets[char]:
                 return False
 
-    return not stack
+    return not exp
 
-# Test cases
+# See if working
+
 expression1 = "([]{})"
 expression2 = "([)]"
-print(is_balanced(expression1))  # Output: True
-print(is_balanced(expression2))  # Output: False
+print(is_balanced(expression1))  ### This should be True
+print(is_balanced(expression2))  ### And this False
 
+
+
+#### ---Jerry Tarus--- ####
 

@@ -1,15 +1,21 @@
+#### ---Jerry Tarus--- ####
+
 def remove_duplicates(sequence):
-    seen = set()
+    watever = set()
     result = []
 
     for item in sequence:
-        if item not in seen:
+        if item not in watever:
             result.append(item)
-            seen.add(item)
+            watever.add(item)
 
     return result
 
-# Test case
-input_sequence = [2, 3, 2, 4, 5, 3, 6, 7, 5]
-result = remove_duplicates(input_sequence)
-print(result)  # Output: [2, 3, 4, 5, 6, 7]
+# See if this is working
+
+sample_numbers = [2000, 3002, 2300, 47, 53, 3002, 601, 715, 512]
+result = remove_duplicates(sample_numbers)
+print(result)  
+
+
+#### ---Jerry Tarus--- ####
