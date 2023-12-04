@@ -1,3 +1,5 @@
+#### ---Jerry Tarus--- ####
+
 import string
 
 def word_frequency(sentence):
@@ -10,7 +12,11 @@ def word_frequency(sentence):
 
     return word_count
 
-# Test case
-sentence = "This is a test sentence. This sentence is a test."
+# See if code is functional
+
+sentence = "Brilliance is a description. Brilliance is a description! Brilliance is not a description"
 result = word_frequency(sentence)
 print(result)
+
+
+#### ---Jerry Tarus--- ####

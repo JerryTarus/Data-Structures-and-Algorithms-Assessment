@@ -1,10 +1,10 @@
 #### ---Jerry Tarus--- ####
 
-def remove_duplicates(sequence):
+def remove_duplicates(array):
     watever = set()
     result = []
 
-    for item in sequence:
+    for item in array:
         if item not in watever:
             result.append(item)
             watever.add(item)
